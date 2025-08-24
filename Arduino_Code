@@ -4,7 +4,7 @@ void setup(){
 pinMode(3, OUTPUT);
 Serial.begin(9600);
 Serial.println("Reading from the Moisture sensor…");
-delay(2000);}
+delay(2000);}
 void loop(){
 output_value= analogRead (sensor_pin);
 output_value= map (output_value,550,10,0,100);
